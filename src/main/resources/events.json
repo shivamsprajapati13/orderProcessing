@@ -1,0 +1,17 @@
+
+{"eventId": "e1", "timestamp": "2025-07-29T10:00:00Z", "eventType": "OrderCreated", "orderId": "ORD001", "customerId": "CUST001", "items": [{"itemId": "P001", "qty": 2}], "totalAmount": 100.00}
+{"eventId": "e2", "timestamp": "2025-07-29T10:05:00Z", "eventType": "PaymentReceived", "orderId": "ORD001", "amountPaid": 100.00}
+{"eventId": "e3", "timestamp": "2025-07-30T08:00:00Z", "eventType": "ShippingScheduled", "orderId": "ORD001", "shippingDate": "2025-08-01"}
+{"eventId": "e4", "timestamp": "2025-07-30T09:00:00Z", "eventType": "OrderCancelled", "orderId": "ORD002", "reason": "Customer request"}
+
+{"eventId": "e5", "timestamp": "2025-08-10T14:30:00Z", "eventType": "OrderCreated", "orderId": "ORD002", "customerId": "CUST002", "items": [{"itemId": "P002", "qty": 1}, {"itemId": "P003", "qty": 5}], "totalAmount": 250.75}
+{"eventId": "e6", "timestamp": "2025-08-11T09:00:00Z", "eventType": "PaymentReceived", "orderId": "ORD002", "amountPaid": 100.00}
+
+{"eventId": "e7", "timestamp": "2025-08-12T13:45:00Z", "eventType": "PaymentReceived", "orderId": "ORD002", "amountPaid": 150.75}
+
+{"eventId": "e8", "timestamp": "2025-08-13T16:00:00Z", "eventType": "ShippingScheduled", "orderId": "ORD002", "shippingDate": "2025-08-15"}
+
+{"eventId": "e9", "timestamp": "2025-08-14T12:00:00Z", "eventType": "OrderCreated", "orderId": "ORD003", "customerId": "CUST003", "items": [{"itemId": "P004", "qty": 3}], "totalAmount": 75.00}
+
+{"eventId": "e10", "timestamp": "2025-08-14T14:30:00Z", "eventType": "OrderCancelled", "orderId": "ORD003", "reason": "Customer changed mind"}
+{"eventId": "e11", "timestamp": "2025-08-15T10:00:00Z", "eventType": "OrderCreated", "orderId": "ORD004", "customerId": "CUST004", "items": [{"itemId": "P005", "qty": 2}], "totalAmount": 180.00}
