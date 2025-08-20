@@ -17,6 +17,38 @@ Events are ingested from a JSON file containing one JSON event object per line.
 
 ---
 
+### Project Strucute 
+```
+order-processing-system/
+│
+├── pom.xml                         # Maven dependency file
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── orderProcessing/
+│       │       ├── OrderProcessingApp.java
+│       │       ├── EventProcessor.java
+|       │       ├── EventParser.java
+│       │       ├── model/
+│       │       │   ├── Order.java
+│       │       │   ├── OrderStatus.java
+│       │       │   └── Item.java
+│       │       ├── events/
+│       │       │   ├── Event.java
+│       │       │   ├── OrderCreatedEvent.java
+│       │       │   ├── PaymentReceivedEvent.java
+│       │       │   ├── ShippingScheduledEvent.java
+│       │       │   └── OrderCancelledEvent.java
+│       │       └── observers/
+│       │           ├── EventObserver.java
+│       │           ├── LoggerObserver.java
+│       │           └── AlertObserver.java
+│       └── resources/
+│           └── events.json            # Place test/event data here
+
+```
+
+
 ## Key Components
 
 ### Domain Model
